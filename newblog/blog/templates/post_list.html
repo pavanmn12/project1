@@ -1,0 +1,18 @@
+<html>
+<head>
+    post list<br>
+
+</head>
+<body>
+
+{% for item in list %}
+
+<a href="{% url 'detail' pk=item.pk %}">{{ item.title }}</a><br>
+
+{% endfor %}
+
+
+
+
+</body>
+</html>
